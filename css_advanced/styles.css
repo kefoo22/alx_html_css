@@ -1,0 +1,371 @@
+/* ===== Global Reset and Base Styles ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+/* Utility container */
+.container {
+  padding-inline: 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+#head_firstbanner {
+  background-image: url(images/Object.png);
+  background-size: cover;
+  height: 1093px;
+}
+
+.logo_nav {
+  display: flex;
+  justify-content: center;
+  gap: 60%;
+  padding: 1.5em;
+}
+
+#homeLogo {
+  width: 75%;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+}
+
+header section nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* ===== Hero Section ===== */
+main section {
+  text-align: center;
+}
+
+main section h1 {
+  color: white;
+  margin-top: 1em;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+#first_banner_text {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
+  color: white;
+}
+
+button {
+  background-color: #C271FF;
+  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 22px;
+  padding: 1.2em;
+  margin-top: 3em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a950d6;
+}
+
+/* ===== Learn from Pros Section ===== */
+#learn {
+  color: white;
+  font-size: 32px;
+}
+
+#light {
+  font-weight: lighter;
+}
+
+strong {
+  color: #C271FF;
+}
+
+#banner_two {
+  margin-top: 10em;
+}
+
+/* ===== Pros Section ===== */
+#pros_details {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-around;
+  margin-inline: 5em;
+}
+
+#bruce {
+  border-radius: 20em;
+}
+
+.pros_names {
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  margin: 0.5em;
+}
+
+.sub_title {
+  color: white;
+  font-style: italic;
+  font-size: 16px;
+}
+
+/* ===== Quote Section ===== */
+#the_quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C271FF;
+  gap: 2.5em;
+  padding: 3em 0;
+}
+
+#Pros_in_red {
+  width: 7em;
+}
+
+#the_quote_content {
+  color: white;
+  font-size: 22px;
+  width: 33em;
+}
+
+.quote_text {
+  font-weight: lighter;
+}
+
+.all_quote_text {
+  margin-bottom: 1em;
+}
+
+#pName {
+  margin-bottom: 0.2em;
+}
+
+.weather {
+  font-style: italic;
+}
+
+/* ===== Video Section ===== */
+#the_video_section {
+  padding: 5em;
+}
+
+#video_title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: lighter;
+  margin-bottom: 2em;
+}
+
+#videos {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-inline: 1em;
+  cursor: pointer;
+}
+
+.video_behind, .video_behind2, .video_behind3, .video_behind4 {
+  padding: 2.5em 0 4em 0;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.video_behind { background-image: url(images/9.png); }
+.video_behind2 { background-image: url(images/7.png); }
+.video_behind3 { background-image: url(images/8.png); }
+.video_behind4 { background-image: url(images/6.png); }
+
+.smile_title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-block: 1em;
+}
+
+.smile_content {
+  margin-bottom: 1em;
+  color: #656668;
+  font-weight: 300;
+}
+
+.Phillip_img {
+  display: flex;
+  align-items: center;
+  color: #C271FF;
+  font-weight: 700;
+}
+
+.Phillip_smile {
+  width: 20%;
+  margin-right: 1em;
+}
+
+.smile_ratings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline-end: 3em;
+  margin-top: 1em;
+}
+
+.rating_time {
+  color: #C271FF;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ===== Membership Section ===== */
+#free {
+  background-color: #071629;
+  padding-block: 5em;
+  text-align: center;
+}
+
+.freeM {
+  font-weight: lighter;
+  font-size: 32px;
+  color: white;
+  padding-bottom: 2em;
+}
+
+#membership {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding-inline: 3em;
+  color: white;
+}
+
+.member_title {
+  padding-block: 1em;
+}
+
+.member_content {
+  padding-inline: 3em;
+  font-size: 14px;
+  font-weight: lighter;
+  color: white;
+  margin-bottom: 3em;
+}
+
+/* ===== FAQ Section ===== */
+#askQuestion {
+  text-align: left;
+}
+
+#FreqQuest {
+  display: flex;
+  justify-content: center;
+}
+
+.askQ {
+  color: #071629;
+  font-size: 60px;
+  font-weight: lighter;
+  margin-block: 1em;
+  text-align: center;
+}
+
+.Quest_content {
+  margin: 4em 10em;
+}
+
+.Qest_title {
+  margin-bottom: 1em;
+  font-size: 16px;
+  color: #071629;
+}
+
+.qest_text {
+  font-size: 14px;
+  color: #979797;
+}
+
+footer {
+  font-family: Source Sans Pro;
+  text-align: center;
+  background-color: #071629;
+  padding-block: 2em;
+}
+
+.footer_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+#homeLogo {
+  width: 100px;
+}
+
+.social_icons {
+  display: flex;
+  gap: 1em;
+}
+
+.social_icon {
+  width: 1.5em;
+}
+
+#right {
+  color: #979797;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 768px) {
+  .logo_nav {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  #pros_details, #videos, #membership {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main section h1 {
+    font-size: 64px;
+  }
+
+  #the_quote_content {
+    width: 90%;
+  }
+
+  .Quest_content {
+    margin: 2em 2em;
+  }
+
+  #FreqQuest {
+    flex-direction: column;
+  }
+}
