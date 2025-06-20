@@ -1,0 +1,434 @@
+@import url("./reset.css");
+@import url("./normalize.css");
+@import url("./typography.css");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+  --color-primary: #FF6565;
+  --color-black: #1b1b1b;
+  --color-white: #ffffff;
+  --color-ligh-grey: #07162922;
+  --color-blue: #071629;
+
+  --text-color: var(--color-black);
+
+  --font-family-base: 'Source Sans Pro', sans-serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-size-small: 1.4rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 3.2rem;
+  --font-size-xx-large: 4.6rem;
+
+  --font-weight-regular: 400;
+  --font-weight-semiBold: 500;
+  --font-weight-bold: 600;
+
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
+  --line-heigt-extra-big: 4rem;
+  --nav-item-margin: 0 0 0 4rem;
+  --header-text-color: var(--color-white);
+
+}
+
+/* Base
+============================= */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
+  overflow-x: hidden;
+  color: var(--text-color);
+  margin: 0 auto;
+  justify-content: center;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  opacity: 0.9;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 13px 31px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-small);
+  margin: 0 auto;
+  display: flex;
+}
+
+h1 {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-heigt-extra-big);
+}
+
+h2 {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-x-large);
+}
+
+h3 {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-large);
+}
+
+p {
+  margin: 0 2rem;
+}
+
+footer {
+  color: var(--color-white);
+}
+
+footer p {
+  opacity: 0.35;
+}
+
+/*Header*/
+
+header {
+  width: 100%;
+  padding-top: 2rem;
+  position: absolute;
+  color: var(--header-text-color);
+}
+
+header ul {
+  font-weight: var(--font-weight-bold);
+  min-width: 100%;
+}
+
+.header_logo {
+  width: 160px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav {
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  display: flex;
+}
+
+.nav .nav-link:hover {
+  color: var(--color-primary)
+}
+
+.nav .nav-link:active {
+  color: var(--color-primary)
+}
+
+.nav-item {
+  margin: var(--nav-item-margin);
+}
+
+.menu-ico {
+  cursor: pointer;
+  padding: 2.5rem;
+  position: relative;
+  user-select: none;
+  display: none;
+}
+
+.nav-ico {
+  background: var(--color-white);
+  display: block;
+  width: 2rem;
+  height: .2rem;
+  position: relative;
+  transition: background .2s ease-out;
+}
+
+.nav-ico::before,
+.nav-ico::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--color-white);
+  transition: all .2s ease-out;
+}
+
+.menu-btn:checked~.menu-ico .nav-ico::before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked~.menu-ico .nav-ico::after {
+  transform: rotate(45deg);
+}
+
+.menu-btn:checked~.menu-ico .nav-ico::after,
+.menu-btn:checked~.menu-ico .nav-ico::before {
+  top: 0;
+}
+
+.menu-btn:checked~.menu-ico .nav-ico {
+  background: transparent;
+}
+
+.nav-ico::after {
+  top: .7rem;
+}
+
+.nav-ico::before {
+  top: -.7rem;
+}
+
+.menu-btn {
+  display: none;
+}
+
+/*Banner*/
+
+.banner {
+  background-image: url("images/headphones_hero_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 880px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--header-text-color);
+}
+
+.banner-content {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-title {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.main-title strong {
+  margin: 0 4rem;
+}
+
+.CTA {
+  margin: 40px 0;
+
+}
+
+.caption {
+  text-align: center;
+  max-width: 637px;
+  padding-top: 1.5rem;
+}
+
+/*DISCOVER SECTION*/
+.discover {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.discover-title {
+  margin-bottom: 4rem;
+}
+
+.discover-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons-section {
+  display: flex;
+}
+
+.discover-subtitle p {
+  text-align: center;
+  max-width: 637px;
+  margin-bottom: 10rem;
+}
+
+.discover-icon,
+.discover-icon2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.discover-icon h3 {
+  margin-top: 2.5rem;
+}
+
+.discover-icon p {
+  margin: 1.3rem 0;
+}
+
+.discover-icon2 img {
+  padding-bottom: 7rem;
+}
+
+.section1,
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 11rem;
+
+}
+
+/* Keyframes for fade and slide-up */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply to images inside discover-icon */
+.discover-icon img {
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+/* Optional: stagger effect by adding nth-child delay */
+.icons-section .discover-icon:nth-child(1) img {
+  animation-delay: 0s;
+}
+
+.icons-section .discover-icon:nth-child(2) img {
+  animation-delay: 0.2s;
+}
+
+.icons-section .discover-icon:nth-child(3) img {
+  animation-delay: 0.4s;
+}
+
+.icons-section .discover-icon:nth-child(4) img {
+  animation-delay: 0.6s;
+}
+
+/* Keyframes for bounce */
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Apply bounce on hover */
+.discover-icon img:hover {
+  animation: bounce 0.6s ease;
+}
+
+.discover-icon img {
+  will-change: transform, opacity;
+}
+
+
+.section2 {
+  background-image: url('images/headphones_hero_2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: auto;
+  width: 100vw;
+  color: var(--color-white);
+}
+
+
+.icons-section2 {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+
+.discover-icon2 {
+  text-align: center;
+}
+
+.pentagon {
+  width: 150px;
+  height: 150px;
+  background-color: #FF6535;
+  clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: transform 0.3s ease;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.pentagon:hover {
+  transform: scale(1.10) rotate(5deg);
+}
+
+.number {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.sub-number {
+  font-size: 13px;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+
+
+/* Animate the Section on Scroll*/
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icons-section2 {
+  animation: fadeInUp 1s ease forwards;
+}
