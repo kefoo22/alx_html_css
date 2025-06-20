@@ -1,0 +1,2 @@
+- In this project we will be implementing a design from scratch.
+- Here is the link to the design images : https://savanna.alxafrica.com/rltoken/pdZCu9bG39JdGro_nNsP2g
